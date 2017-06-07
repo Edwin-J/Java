@@ -1,29 +1,33 @@
 
-public class ShapeTest {
-
-	public static void main(String[] args) {
-		Shape shapes[] = new Shape[3];
-		
-		shapes[0] = new Shape(0, 0);
-		shapes[1] = new Shape(1, 1);
-		shapes[2] = new Shape(2, 2);
-		
-		for (Shape shape : shapes)
-			shape.draw();
-		
-	}
-
+class Shape {
+	public void draw() { System.out.println("Shape를 그림"); }
 }
 
-class Shape {
-	private int x, y;
+class Rectangle extends Shape {
+	public void draw() { System.out.println("Rectangle을 그림"); }
+}
+
+class Circle extends Shape {
+	public void draw() { System.out.println("Circle을 그림"); }
+}
+
+public class ShapeTest_3 {
+	public static Shape[] shapeArray = new Shape[3];
 	
-	Shape(int x, int y){
-		this.x = x; this.y = y;
+	public static void init(){ 
+		shapeArray[0] = new Shape();
+		shapeArray[1] = new Rectangle();
+		shapeArray[2] = new Circle();
 	}
 	
-	public void draw(){
-		System.out.println("(" + x + ", " + y + ")에 도형을 그림.");
+	public static void drawAll(){
+		for (Shape s : shapeArray)
+			s.draw();
+	}
+	
+	public static void main(String[] args){
+		init();
+		drawAll();
 	}
 	
 }
