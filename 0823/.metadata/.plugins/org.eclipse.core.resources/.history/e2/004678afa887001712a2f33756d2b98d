@@ -1,0 +1,26 @@
+
+public class CircleExam {
+
+	public static void main(String[] args) {
+		Circle obj = new Circle(2, 3, 30);
+		System.out.println("¿ø obj: " + obj);
+	}
+
+}
+
+class Circle {
+	
+	private int x;
+	private int y;
+	private int r;
+
+	public Circle(int x, int y, int r) {
+		this.x = x;
+		this.y = y;
+		this.r = r;
+	}
+	
+	return x + ", " + y + ", " + z;
+	
+	
+}

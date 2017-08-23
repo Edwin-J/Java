@@ -1,0 +1,28 @@
+
+public class SearchMax {
+
+	public static void main(String[] args) {
+		SearchMax ref = new SearchMax();
+		ref.printMax();
+		ref.printMax(34, 3, 3, 2.4, 56);
+		ref.printMax(new double[]{1, 2, 3});
+	}
+	
+	public void printMax(double... num) {
+		
+		if (num.length == 0)
+			System.out.println("넘겨 받은 숫자 없음");
+		
+		else {
+			
+			double max = 0;
+			for (int i = 0; i < num.length; i++)
+				if (num[i] > max)
+					max = num[i];
+			System.out.println("가장 큰 값 : " + max);
+			
+		}
+		
+	}
+
+}
