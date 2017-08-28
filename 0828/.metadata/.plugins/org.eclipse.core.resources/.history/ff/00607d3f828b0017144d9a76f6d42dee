@@ -1,0 +1,14 @@
+
+public class ExceptionExam3 {
+
+	public static void method() {
+		String irum[] = new String[3];
+		irum[3] = "ȫ�浿";
+	}
+	
+	public static void main(String[] args) {
+		method();
+
+	}
+
+}

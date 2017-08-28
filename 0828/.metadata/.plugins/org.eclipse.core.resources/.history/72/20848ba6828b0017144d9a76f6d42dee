@@ -1,0 +1,20 @@
+
+public class ExceptionExam3 {
+
+	public static void method() {
+		int n = Integer.parseInt("number");
+		System.out.println(n);
+	}
+	
+	public static void main(String[] args) {
+		
+		try {
+			method();
+		} catch (NumberFormatException e) {
+			int n = Integer.parseInt("number");
+			System.out.println(n);
+		}
+		
+	}
+
+}

@@ -1,0 +1,17 @@
+import java.io.*;
+
+
+public class Exam {
+
+	public static void main(String[] args) {
+		int bt = 0;
+		try {
+			bt = System.in.read();
+			System.out.print((char)bt);
+		} catch (IOException e) {
+			System.err.println(e);
+		}
+
+	}
+
+}
