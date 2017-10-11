@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+import org.omg.CORBA.SystemException;
+
+public class Exam3 {
+
+	public static void main(String[] args) {
+		Scanner sc;
+		Scanner sc1 = new Scanner(System.in);
+		Scanner sc2 = new Scanner(System.in);
+		sc = sc2;
+		
+		int num1 = sc.nextInt();
+		int num2 = sc.nextInt();
+		int sum = num1 + num2;
+		
+		System.out.printf("%d + %d = %d", num1, num2, sum);
+		sc.close();
+	}
+
+}

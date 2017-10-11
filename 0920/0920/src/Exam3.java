@@ -1,0 +1,23 @@
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.util.Scanner;
+
+public class Exam3 {
+
+	public static void main(String[] args) throws Exception {
+		Scanner sc;
+		Scanner sc1 = new Scanner(System.in);
+		Scanner sc2 = new Scanner(System.in);
+		Scanner sc3 = new Scanner(new FileReader("text.txt"));
+		
+		sc = sc3;
+		
+		int num1 = sc.nextInt();
+		int num2 = sc.nextInt();
+		int sum = num1 + num2;
+		
+		System.out.printf("%d + %d = %d", num1, num2, sum);
+		sc.close();
+	}
+
+}
